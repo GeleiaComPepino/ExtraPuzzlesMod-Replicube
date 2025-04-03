@@ -1,0 +1,7 @@
+{
+	"id": "ExtraPuzzlesMod",
+	"name": "Extra Puzzles Mod",
+	"description": "A mod that add new puzzles to Replicube!",
+	"root": "res://mods/ExtraPuzzlesMod/",
+	"main": "Main.gd"
+}
