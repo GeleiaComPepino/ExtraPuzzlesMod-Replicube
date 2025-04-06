@@ -1,0 +1,38 @@
+{
+	"code": "if y == -5 then
+	if abs(x) <= 2 and abs(z) <= 2 then
+		return 10
+	end
+elseif y == -4 then
+	if abs(x) <= 3 and abs(z) <= 3 then
+		return 10
+	end
+elseif y > -4 and y < 1 then
+	if abs(x) <= 4 and abs(z) <= 4 then
+		if (abs(z) == 4 and abs(x) == 4) then
+			return 0
+		end
+		return 10
+	end
+elseif y == 1 then
+	if abs(x) <= 3 and abs(z) <= 3 then
+		return 10
+	end
+elseif y == 2 then
+	if abs(x) <= 2 and abs(z) <= 2 then
+		return 10
+	end
+elseif y == 3 then
+	if abs(x) <= 1 and abs(z) <= 1 then
+		return 10
+	end
+elseif y == 4 and x == 0 and z == 0 then
+	return 15
+elseif y == 5 and x == 0 and z == 0 then
+	return 15
+elseif y == 5 and x == 0 and z == -1 then
+	return 11
+end",
+	"name": "Pear",
+	"size": 6
+}
