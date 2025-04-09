@@ -1,0 +1,25 @@
+{
+	"code": "local dx, dy, dz = x, y, z
+local d = sqrt(dx*dx + dy*dy + dz*dz)
+if d > 5.5 then
+	return 0  -- outside the sphere
+end
+if abs(x) <= 1 and abs(y) <= 1 and z == 5 then
+	return 1
+end
+if (
+	(abs(x) == 2 and abs(y) <= 1 and z == 5) or
+	(abs(y) == 2 and abs(x) <= 1 and z == 5)
+) then
+	return 3
+end
+if abs(y) < 0.5 then
+	return 3
+end
+if y > 0 then
+	return 7
+end
+return 1",
+	"name": "Pokeball",
+	"size": 6
+}
