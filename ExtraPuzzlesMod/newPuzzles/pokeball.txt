@@ -1,24 +1,35 @@
 {
 	"code": "local dx, dy, dz = x, y, z
 local d = sqrt(dx*dx + dy*dy + dz*dz)
-if d > 5.5 then
-	return 0  -- outside the sphere
+
+if d > 6.5 then
+    return 0  -- outside the sphere
 end
-if abs(x) <= 1 and abs(y) <= 1 and z == 5 then
-	return 1
+
+-- Center button (white highlight)
+if abs(x) <= 1 and abs(y) <= 1 and z == 6 then
+    return 1
 end
+
+-- Detail pixels around the button
 if (
-	(abs(x) == 2 and abs(y) <= 1 and z == 5) or
-	(abs(y) == 2 and abs(x) <= 1 and z == 5)
+    (abs(x) == 2 and abs(y) <= 1 and z == 6) or
+    (abs(y) == 2 and abs(x) <= 1 and z == 6)
 ) then
-	return 3
+    return 3
 end
+
+-- Middle stripe (black)
 if abs(y) < 0.5 then
-	return 3
+    return 3
 end
+
+-- Top half = red
 if y > 0 then
-	return 7
+    return 7
 end
+
+-- Bottom half = white
 return 1",
 	"name": "Pokeball",
 	"size": 6
