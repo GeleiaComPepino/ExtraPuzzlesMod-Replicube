@@ -7,6 +7,9 @@ end
 if (d > 6.5) then
 	return 0
 end
+if (abs(z) == 6) or (abs(x) == 6) then
+	return 0
+end
 return y + 7",
 	"name": "Egg",
 	"size": 6
