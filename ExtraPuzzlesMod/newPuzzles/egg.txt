@@ -1,0 +1,11 @@
+{
+	"code": "local dx, dy, dz = x, y, z
+local d = (x/2)^2 + (y/2.6)^2 + (z/2)^2
+
+if d > 6.5 then
+	return 0
+end
+return y + 7",
+	"name": "Egg",
+	"size": 6
+}
